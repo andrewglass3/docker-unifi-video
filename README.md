@@ -2,6 +2,7 @@
 Unifi Video Controller Software Running in Docker
 
 ##More details to be added however in the mean time:
+Big thank you to ctindale for the work on creating the initial docker image for this and his helpful guidance on the UBNT forums.
 
 From within the cloned folder run:
 
