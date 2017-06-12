@@ -21,4 +21,4 @@ services:
      - "7447:7447"
      restart: always
      volumes:
-      - /docker-unifi-video:/var/lib/unifi-video
+      - /docker-unifi-video/data:/var/lib/unifi-video
