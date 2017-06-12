@@ -4,6 +4,13 @@ services:
   unifivideo:
      image: ctindel/unifi-video-controller
      hostname: unifi-video
+     cap_add:
+     - SYS_ADMIN
+     - DAC_READ_SEARCH
+     - NET_BIND_SERVICE
+     - SYS_PTRACE
+     - SETUID
+     - SETGID
      ports:
      - "1935:1935"
      - "6666:6666"
