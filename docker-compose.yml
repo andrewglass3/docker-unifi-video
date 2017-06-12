@@ -3,7 +3,9 @@ version: '2'
 services:
   unifivideo:
      image: ctindel/unifi-video-controller
-     hostname: unifi-video
+     hostname: localhost
+     security_opt:
+     - apparmor:unconfined
      cap_add:
      - SYS_ADMIN
      - DAC_READ_SEARCH
