@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  unifivideo:
+     image: ctindel/unifi-video-controller
+     hostname: unifi-video
+     ports:
+      - "1935:1935"
+      - "6666:6666"
+      - "7080:7080"
+      - "7443:7443"
+      - "7445:7445"
+      - "7446:7446"
+      - "7447:7447"
+      restart: always
+      volumes:
+      - /docker-unifi-video:/var/lib/unifi-video
